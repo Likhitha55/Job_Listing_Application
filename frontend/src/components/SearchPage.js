@@ -22,6 +22,8 @@ function SearchPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [job, setJob] = useState(null);
 
+    axios.defaults.withCredentials = true;
+
   useEffect(() => {
     const fetchData = async () => {
         try {
