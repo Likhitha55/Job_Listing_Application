@@ -20,7 +20,7 @@ function AllJobs() {
 
         const response = await axios({
           method:"get",
-          baseURL: "http://localhost:8080/api",
+          baseURL: "https://job-listing-application-backend-tau.vercel.app/api",
           url: "jobs"
         })
         setJobs(response.data)
@@ -46,7 +46,7 @@ function AllJobs() {
     // console.log(jobId);
     // console.log("in hndle delete")
     try {
-      await axios.delete("http://localhost:8080/api/jobs/delete/" + jobId);
+      await axios.delete("https://job-listing-application-backend-tau.vercel.app/api/jobs/delete/" + jobId);
       setJobs(jobs.filter(job => job._id !== jobId));
       alert('Job deleted Successfully');
     } catch (error) {
