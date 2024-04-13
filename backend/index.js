@@ -9,8 +9,8 @@ const mongoose = require('mongoose')
 const app = express()
 app.use(cors(
     {
-        origin: ["https://job-listing-application-frontend.vercel.app"],
-        mehods: ["POST","GET","DELETE"],
+        origin: "https://job-listing-application-frontend.vercel.app",
+        methods: ["POST","GET","DELETE"],
         credentials: true
     }
 ));
