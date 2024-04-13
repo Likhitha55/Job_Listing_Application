@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react';
 
 function PostJob() {
 
+  axios.defaults.withCredentials = true;
+
   const [formData, setFormData] = useState({
     role: '',
     company: '',
