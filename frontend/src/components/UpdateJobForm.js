@@ -6,6 +6,8 @@ function UpdateJobForm({jobId, onUpdate}) {
   
   const [updateJobId, setUpdateJobId] = useState(jobId);
     // setUpdateJobId(jobId);
+
+  axios.defaults.withCredentials = true;
     const [formData, setFormData] = useState({
         role: '',
         company: '',
