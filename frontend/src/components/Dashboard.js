@@ -81,7 +81,7 @@ function Dashboard() {
 
         const response = await axios({
           method:"get",
-          baseURL: "http://localhost:8080/api",
+          baseURL: "https://job-listing-application-backend-tau.vercel.app/api",
           url: "jobs/total"
         })
         setTotalJobs(response.data.totalJobs);
