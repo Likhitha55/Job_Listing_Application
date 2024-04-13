@@ -11,6 +11,7 @@ function AllJobs() {
   const [selectedJobId, setSelectedJobId] = useState(null);
   const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false);
   const [handleCloseUpdateForm, setHandleCloseUpdateForm] = useState(false);
+  axios.defaults.withCredentials = true;
 
   useEffect(() => {
     async function fetchJobs() {
