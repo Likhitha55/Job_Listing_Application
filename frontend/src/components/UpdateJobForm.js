@@ -28,7 +28,7 @@ function UpdateJobForm({jobId, onUpdate}) {
         e.preventDefault();
         try {
           // console.log('calling backend api')
-          const response = await axios.put(`http://localhost:8080/api/jobs/update/${updateJobId}`, formData);
+          const response = await axios.put(`https://job-listing-application-backend-tau.vercel.app/api/jobs/update/${updateJobId}`, formData);
           alert('Job Updated Successfully! Refresh the page to see changes')
           onUpdate(response.data); // Pass updated job data to parent component
         } catch (error) {
