@@ -24,7 +24,7 @@ function PostJob() {
     e.preventDefault();
     try {
       // Send a POST request to your backend API endpoint
-      const response = await axios.post("http://localhost:8080/api/jobs", formData);
+      const response = await axios.post("https://job-listing-application-backend-tau.vercel.app/api/jobs", formData);
       // Handle the response if needed
       alert('New Job Posted Successfully')
       console.log("Job posted successfully:", response.data);
