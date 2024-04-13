@@ -61,7 +61,7 @@ function Home(){
       navigate("/searchpage",{state:{searchQuery}});
       // const query = e.target.value;
       // console.log(query);
-      // const response = await axios.post('http://localhost:8080/api/jobs/search', { query });
+      // const response = await axios.post('https://job-listing-application-backend-tau.vercel.app/api/jobs/search', { query });
     //   const response = await axios({
     //   method:"get",
     
@@ -93,7 +93,7 @@ function Home(){
 
           const response = await axios({
             method:"get",
-            baseURL: "http://localhost:8080/api",
+            baseURL: "https://job-listing-application-backend-tau.vercel.app/api",
             url: "jobs"
           })
           setJobs(response.data)
