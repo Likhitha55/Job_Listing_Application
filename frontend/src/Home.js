@@ -37,6 +37,7 @@ function Home(){
   const [noJobs, setNoJobs] = useState([]);
   const [allJobs, setAllJobs] = useState([]);
   const [value, setValue] = useState('');
+  axios.defaults.withCredentials = true;
 
   const handleSearchChange = (e) => {
     // setSearchQuery(e.target.value);
