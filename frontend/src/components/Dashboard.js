@@ -11,6 +11,8 @@ import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 
 function Dashboard() {
 
+  axios.defaults.withCredentials = true;
+
   const [totalJobs, setTotalJobs] = useState(0);
   const data = [
     {
