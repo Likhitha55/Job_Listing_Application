@@ -1,0 +1,175 @@
+
+#container{
+  width:auto;
+  height:auto;
+}
+#content{
+  position:relative;
+}
+
+#banner{
+  position:relative;
+  height:400px;
+  background-image: linear-gradient(to bottom right, rgba(53, 180, 203, 0.648) 1%, orange 50%,rgb(234, 60, 7));
+}
+#banner p{
+  width:80%;
+}
+#brandlogo{
+  width:40px;
+  height:40px;
+}
+#profile{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+#header{
+  margin:0;
+  padding:0;
+}
+#line{
+  color: rgba(18, 18, 19, 0.372);
+}
+#pics-on-banner{
+  height:60%;
+}
+#pics-on-banner img{
+  /* width:80px;
+  height:80px; */
+  border-radius: 50%;
+}
+#pic1{
+  position:absolute;
+  top:40px;
+  left:120px;
+  width:100px;
+  height:100px;
+}
+#pic2, #pic5{
+  width:80px;
+  height:90px;
+}
+#pic3, #pic7{
+  width:70px;
+  height:70px;
+}
+#pic4{
+  position:absolute;
+  top:70px;
+  left:460px;
+  width:110px;
+  height:110px;
+}
+#pic6{
+  position:absolute;
+  top:90px;
+  left:730px;
+  width:100px;
+  height:100px;
+}
+#pic2{
+  position:absolute;
+  top:100px;
+  left:260px;
+}
+#pic3{
+  position:absolute;
+  top:30px;
+  left:360px;
+}
+#pic5{
+  position:absolute;
+  top:40px;
+  left:610px;
+}
+#pic7{
+  position:absolute;
+  top:50px;
+  left:870px;
+}
+#searchbar {
+  height:60px;
+  position:absolute;
+  top:460px;
+  left:600px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#searchicon{
+  width:45px;
+  height:45px;
+  border-radius: 50%;
+}
+#searchbox{
+  
+  border:none;
+  outline:none;
+}
+#location{
+  width:20px;
+  height:20px;
+}
+#locdiv{
+  height:40px;
+  background-color: rgba(211, 211, 211, 0.505);
+  text-decoration:none;
+  color:black;
+}
+#srchicon{
+  width:15px;
+  height:15px;
+}
+#suggestions>div>button{
+  border:none;
+}
+.salary-btn.hover:hover { 
+  background-color: blue; 
+}
+.companylogo{
+  width:60px;
+  height:60px;
+}
+.card{
+  box-shadow:0px -2px 3px 0px rgba(0, 0, 0, 0.18);
+}
+.close{
+  cursor:pointer;
+  /* width:20px; */
+  display:flex;
+  justify-content: right;
+  font-size:2rem;
+}
+.modal{
+  
+  width:50%;
+  height:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.logo{
+  width:50px;
+  height:50px;
+  /* background-color: aqua; */
+}
+.modal-box{
+  overflow: scroll;
+  height:1754px;
+  width:2043px;
+}
+.description{
+  height:70%;
+}
+.apply{
+  background-color: #F25406;
+  width:30%;
+  height:45px;
+  color:white;
+  border:none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
