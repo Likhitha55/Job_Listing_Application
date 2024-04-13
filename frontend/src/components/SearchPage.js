@@ -28,7 +28,7 @@ function SearchPage() {
             console.log('Hitting API...');
             const query= searchQuery;
             console.log(query);
-            const response = await axios.post('http://localhost:8080/api/jobs/search', { query });
+            const response = await axios.post('https://job-listing-application-backend-tau.vercel.app/api/jobs/search', { query });
             console.log('Came back from API');
             setFilteredJobs(response.data);
         } catch (error) {
