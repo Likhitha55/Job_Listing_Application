@@ -11,7 +11,7 @@ app.use(cors(
     {
         Access-Control-Allow-Origin : 'https://job-listing-application-frontend.vercel.app',
         Access-Control-Allow-Methods : ['POST','GET','DELETE','PUT'],
-        credentials: true
+        Access-Control-Allow-Credentials : true
     }
 ));
 
