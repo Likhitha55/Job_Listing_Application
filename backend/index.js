@@ -7,13 +7,7 @@ const cors = require('cors');
 const mongoose = require('mongoose')
 
 const app = express()
-app.use(cors(
-    {
-        Access-Control-Allow-Origin : 'https://job-listing-application-frontend.vercel.app',
-        Access-Control-Allow-Methods : ['POST','GET','DELETE','PUT'],
-        Access-Control-Allow-Credentials : true
-    }
-));
+app.use(cors());
 
 const PORT = process.env.PORT || 8080
 
